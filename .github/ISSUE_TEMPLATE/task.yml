@@ -1,0 +1,28 @@
+name: Build task
+description: A small piece of the demo with a clear acceptance check.
+title: "[Task] "
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: User outcome
+      description: What will work when this is done, and how does it support the demo?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance check
+      description: Describe a concrete input, action, and expected result.
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Owner
+      description: Team member responsible for the task.
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and scope
+      description: What must exist first? What is explicitly out of scope?

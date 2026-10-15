@@ -1,0 +1,32 @@
+name: Demo bug
+description: Report a reproducible failure and its impact.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include environment and safe sample input.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Demo impact
+      options:
+        - Blocks the core flow
+        - Affects an optional feature
+        - Visual or documentation issue
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or workaround
+      description: Add safe logs or screenshots. Remove credentials and personal data.
